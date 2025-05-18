@@ -1,0 +1,139 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - good morning
+      - good evening
+      - hey there
+      - hiya
+      - howdy
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you around
+      - see you later
+      - catch you later
+      - so long
+      - farewell
+      - take care
+      - until next time
+
+  - intent: affirm
+    examples: |
+      - yes
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - sure
+      - alright
+      - okay
+      - yeah
+      - yep
+
+  - intent: deny
+    examples: |
+      - no
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - nope
+      - absolutely not
+
+  - intent: thank
+    examples: |
+      - thanks
+      - thank you
+      - thanks a lot
+      - appreciate it
+      - cheers
+      - thank you so much
+      - many thanks
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+      - who are you?
+      - what are you?
+
+  - intent: match_schedule
+    examples: |
+      - When is the next match?
+      - Can you tell me about upcoming games?
+      - Is there a game this weekend?
+      - Show me the match schedule
+      - What's the fixture list?
+      - Who are we playing next?
+      - When is our next home game?
+      - Do we play away this week?
+      - What time is kickoff for the next match?
+      - Are there any matches this month?
+
+  - intent: ticket_info
+    examples: |
+      - How can I buy tickets?
+      - How much are tickets?
+      - Do you have season tickets available?
+      - Can I get tickets at the gate?
+      - Is there an online ticket shop?
+      - How do I purchase away game tickets?
+      - Are there discounts for members?
+      - Can I get a family package?
+      - Do children need tickets?
+      - What's the best way to get match tickets?
+
+  - intent: player_info
+    examples: |
+      - Tell me about [James Smith](player_name)
+      - Who is [Kevin Jones](player_name)?
+      - Information on [Michael Williams](player_name)
+      - Stats for [David Brown](player_name)
+      - How long has [Robert Davis](player_name) been with the club?
+      - What position does [John Miller](player_name) play?
+      - How many goals has [Carlos Rodriguez](player_name) scored?
+      - Is [Steven Wilson](player_name) injured?
+      - Tell me something about [Thomas Johnson](player_name)
+      - How old is [Paul Martinez](player_name)?
+
+  - intent: team_performance
+    examples: |
+      - How is the team doing this season?
+      - What's our position in the league?
+      - How many points do we have?
+      - What's our current form?
+      - Have we qualified for European competitions?
+      - How many games have we won?
+      - Are we in danger of relegation?
+      - What's our goal difference?
+      - How many draws do we have?
+      - Can we still win the league?
+
+  - intent: stadium_info
+    examples: |
+      - Where is the stadium located?
+      - How do I get to the stadium?
+      - What's the stadium capacity?
+      - Tell me about the stadium
+      - Is there parking at the stadium?
+      - Where is stadium?
+      - Where is stadium located?
+      - Where can I find the stadium?
+      - Give me information about the stadium
+      - Stadium location
+      - Stadium information
+      - Stadium details
+      - Where do you play home matches?
+      - Tell me where the stadium is
+      - I want to know about the stadium
+      - Could you tell me about your stadium?

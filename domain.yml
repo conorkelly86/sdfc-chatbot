@@ -1,0 +1,71 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - thank
+  - bot_challenge
+  - match_schedule
+  - ticket_info
+  - player_info
+  - team_performance
+  - stadium_info
+
+entities:
+  - match_date
+  - player_name
+  - team_name
+
+slots:
+  match_date:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: match_date
+  player_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: player_name
+  team_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: team_name
+
+responses:
+  utter_greet:
+    - text: "Hello! I'm your football club assistant. How can I help you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Thanks for chatting with me."
+
+  utter_thank:
+    - text: "You're welcome! Is there anything else I can help you with?"
+
+  utter_default:
+    - text: "I'm sorry, I didn't understand that. Could you rephrase?"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa. I'm here to help you with information about our football club."
+
+  utter_ask_match_schedule:
+    - text: "Our next match is on Saturday at 3 PM against Manchester United at home."
+
+  utter_ticket_info:
+    - text: "Tickets for our home games can be purchased online or at the stadium ticket office. Prices range from $30 to $100 depending on the seat location."
+
+  utter_player_info:
+    - text: "We have information about many players in our team. Which player would you like to know about?"
+
+  utter_team_performance:
+    - text: "Our team is currently in 3rd place in the league with 65 points from 30 games played."
+
+  utter_stadium_info:
+    - text: "Our stadium is located at at Drum East, Tonabrocky, Drum East, Co. Galway, Ireland"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

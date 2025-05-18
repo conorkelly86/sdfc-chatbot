@@ -1,0 +1,55 @@
+version: "3.1"
+
+stories:
+  - story: greet and match schedule
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: match_schedule
+      - action: utter_ask_match_schedule
+      - intent: thank
+      - action: utter_thank
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: greet and ticket info
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ticket_info
+      - action: utter_ticket_info
+      - intent: thank
+      - action: utter_thank
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: greet and team performance
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: team_performance
+      - action: utter_team_performance
+      - intent: thank
+      - action: utter_thank
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: greet and player info
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: player_info
+      - action: utter_player_info
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: greet and stadium info
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: stadium_info
+      - action: utter_stadium_info
+      - intent: thank
+      - action: utter_thank
+      - intent: goodbye
+      - action: utter_goodbye
